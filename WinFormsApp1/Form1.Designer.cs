@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1
+﻿using System.Windows.Forms;
+
+namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -46,6 +48,7 @@
             button15 = new System.Windows.Forms.Button();
             button16 = new System.Windows.Forms.Button();
             button17 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
             SuspendLayout();
             // 
             // textBox1
@@ -188,8 +191,8 @@
             button15.Name = "button15";
             button15.Size = new System.Drawing.Size(75, 23);
             button15.TabIndex = 15;
-            button15.Text = "=";            button15.UseVisualStyleBackColor = true;
-           
+            button15.Text = "=";
+            button15.UseVisualStyleBackColor = true;
             // 
             // button16
             // 
@@ -209,11 +212,24 @@
             button17.Text = "1";
             button17.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(35, 100);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(81, 29);
+            label1.TabIndex = 18;
+            label1.Text = "label1";
+            label1.Click += label1_Click;
+            label1.BorderStyle = BorderStyle.None;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(344, 403);
+            Controls.Add(label1);
             Controls.Add(button17);
             Controls.Add(button16);
             Controls.Add(button15);
@@ -259,5 +275,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label1;
     }
 }

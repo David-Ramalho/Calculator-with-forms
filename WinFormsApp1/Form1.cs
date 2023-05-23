@@ -71,6 +71,7 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label1.Text = "Welcome to Calculator";
             // Wire up the click events for number buttons
             button1.Click += NumberButton_Click;
             button2.Click += NumberButton_Click;
@@ -97,6 +98,9 @@ namespace WinFormsApp1
             button15.Click += EqualsButton_Click;
         }
 
-      
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
